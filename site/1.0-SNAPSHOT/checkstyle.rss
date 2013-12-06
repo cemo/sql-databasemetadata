@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>sql-databasemetadata - Checkstyle report</title>
+    <link>https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT</link>
+    <description>sql-databasemetadata - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2011 - 2013</copyright>
+    <item>
+      <title>File: 33,
+             Errors: 1427,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.PrimaryKey.java">com/github/jinahya/sql/databasemetadata/PrimaryKey.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  41
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.SuppressionDomain.java">com/github/jinahya/sql/databasemetadata/SuppressionDomain.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.BestRowIdentifier.java">com/github/jinahya/sql/databasemetadata/BestRowIdentifier.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  69
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Schema.java">com/github/jinahya/sql/databasemetadata/Schema.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  53
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.SuppressionPath.java">com/github/jinahya/sql/databasemetadata/SuppressionPath.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.ColumnPrivilege.java">com/github/jinahya/sql/databasemetadata/ColumnPrivilege.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  49
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.SuppressionKey.java">com/github/jinahya/sql/databasemetadata/SuppressionKey.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  62
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Catalog.java">com/github/jinahya/sql/databasemetadata/Catalog.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  29
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Index.java">com/github/jinahya/sql/databasemetadata/Index.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  100
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.package-info.java">com/github/jinahya/sql/databasemetadata/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.ColumnLabel.java">com/github/jinahya/sql/databasemetadata/ColumnLabel.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Suppressions.java">com/github/jinahya/sql/databasemetadata/Suppressions.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Suppression.java">com/github/jinahya/sql/databasemetadata/Suppression.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.TablePrivilege.java">com/github/jinahya/sql/databasemetadata/TablePrivilege.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  46
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.ClientInfoProperty.java">com/github/jinahya/sql/databasemetadata/ClientInfoProperty.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  42
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.TableType.java">com/github/jinahya/sql/databasemetadata/TableType.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Column.java">com/github/jinahya/sql/databasemetadata/Column.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  125
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Metadata.java">com/github/jinahya/sql/databasemetadata/Metadata.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  107
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.ImportedKey.java">com/github/jinahya/sql/databasemetadata/ImportedKey.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  85
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.DataType.java">com/github/jinahya/sql/databasemetadata/DataType.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  113
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.XmlNillableBySpecification.java">com/github/jinahya/sql/databasemetadata/XmlNillableBySpecification.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Table.java">com/github/jinahya/sql/databasemetadata/Table.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  89
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.ExportedKey.java">com/github/jinahya/sql/databasemetadata/ExportedKey.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Function.java">com/github/jinahya/sql/databasemetadata/Function.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  46
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.UserDefinedType.java">com/github/jinahya/sql/databasemetadata/UserDefinedType.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  59
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.NotUsed.java">com/github/jinahya/sql/databasemetadata/NotUsed.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.XmlNillableBySuppression.java">com/github/jinahya/sql/databasemetadata/XmlNillableBySuppression.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Attribute.java">com/github/jinahya/sql/databasemetadata/Attribute.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  107
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.VersionColumn.java">com/github/jinahya/sql/databasemetadata/VersionColumn.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  60
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.XmlConstants.java">com/github/jinahya/sql/databasemetadata/XmlConstants.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.ColumnRetriever.java">com/github/jinahya/sql/databasemetadata/ColumnRetriever.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Procedure.java">com/github/jinahya/sql/databasemetadata/Procedure.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  45
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.SuppressionPathBuilder.java">com/github/jinahya/sql/databasemetadata/SuppressionPathBuilder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+
