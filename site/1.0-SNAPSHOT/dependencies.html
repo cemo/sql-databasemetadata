@@ -728,40 +728,48 @@ Jackson JSON processor's data binding functionality.</p>
 <th>Repo ID</th>
 <th>URL</th>
 <th>Release</th>
-<th>Snapshot</th></tr>
+<th>Snapshot</th>
+<th>Blacklisted</th></tr>
 <tr class="b">
 <td>apache.snapshots</td>
 <td><a class="externalLink" href="http://repository.apache.org/snapshots">http://repository.apache.org/snapshots</a></td>
 <td>-</td>
-<td>Yes</td></tr>
+<td>Yes</td>
+<td>-</td></tr>
 <tr class="a">
 <td>sonatype-nexus-snapshots</td>
 <td><a class="externalLink" href="https://oss.sonatype.org/content/repositories/snapshots">https://oss.sonatype.org/content/repositories/snapshots</a></td>
 <td>-</td>
-<td>Yes</td></tr>
+<td>Yes</td>
+<td>-</td></tr>
 <tr class="b">
 <td>m2.dev.java.net</td>
 <td><a class="externalLink" href="http://download.java.net/maven/2">http://download.java.net/maven/2</a></td>
 <td>Yes</td>
-<td>Yes</td></tr>
+<td>Yes</td>
+<td>-</td></tr>
 <tr class="a">
 <td>central</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2">http://repo.maven.apache.org/maven2</a></td>
 <td>Yes</td>
+<td>-</td>
 <td>-</td></tr>
 <tr class="b">
 <td>eclipselink.repository</td>
 <td><a class="externalLink" href="http://www.eclipse.org/downloads/download.php?r=1&amp;nf=1&amp;file=/rt/eclipselink/maven.repo">http://www.eclipse.org/downloads/download.php?r=1&amp;nf=1&amp;file=/rt/eclipselink/maven.repo</a></td>
 <td>Yes</td>
-<td>Yes</td></tr>
+<td>Yes</td>
+<td>-</td></tr>
 <tr class="a">
 <td>jvnet-nexus-snapshots</td>
 <td><a class="externalLink" href="https://maven.java.net/content/repositories/snapshots">https://maven.java.net/content/repositories/snapshots</a></td>
 <td>-</td>
-<td>Yes</td></tr>
+<td>Yes</td>
+<td>-</td></tr>
 <tr class="b">
 <td>repository.jboss.org</td>
 <td><a class="externalLink" href="http://repository.jboss.org/nexus/content/groups/public/">http://repository.jboss.org/nexus/content/groups/public/</a></td>
+<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td></tr></table>
 <p>Repository locations for each of the Dependencies.</p>
@@ -773,15 +781,13 @@ Jackson JSON processor's data binding functionality.</p>
 <th>m2.dev.java.net</th>
 <th>central</th>
 <th>eclipselink.repository</th>
-<th>jvnet-nexus-snapshots</th>
-<th>repository.jboss.org</th></tr>
+<th>jvnet-nexus-snapshots</th></tr>
 <tr class="b">
 <td>ch.qos.logback:logback-classic:jar:1.0.13</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
-<td>-</td>
 <td>-</td>
 <td>-</td></tr>
 <tr class="a">
@@ -791,7 +797,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
 <td>-</td></tr>
 <tr class="b">
 <td>com.beust:jcommander:jar:1.27</td>
@@ -799,7 +804,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/com/beust/jcommander/1.27/jcommander-1.27.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
-<td>-</td>
 <td>-</td>
 <td>-</td></tr>
 <tr class="a">
@@ -809,7 +813,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/com/h2database/h2/1.3.174/h2-1.3.174.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
 <td>-</td></tr>
 <tr class="b">
 <td>com.sun.jersey:jersey-core:jar:1.17.1</td>
@@ -817,7 +820,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/com/sun/jersey/jersey-core/1.17.1/jersey-core-1.17.1.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
-<td>-</td>
 <td>-</td>
 <td>-</td></tr>
 <tr class="a">
@@ -827,7 +829,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/com/sun/jersey/jersey-json/1.17.1/jersey-json-1.17.1.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
 <td>-</td></tr>
 <tr class="b">
 <td>com.sun.xml.bind:jaxb-impl:jar:2.2.3-1</td>
@@ -835,7 +836,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://download.java.net/maven/2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
-<td>-</td>
 <td>-</td>
 <td>-</td></tr>
 <tr class="a">
@@ -845,7 +845,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/javax/activation/activation/1.1/activation-1.1.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
 <td>-</td></tr>
 <tr class="b">
 <td>javax.xml.bind:jaxb-api:jar:2.2.2</td>
@@ -853,7 +852,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://download.java.net/maven/2/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar"><img alt="Found at http://download.java.net/maven/2" src="images/icon_success_sml.gif" /></a></td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
-<td>-</td>
 <td>-</td>
 <td>-</td></tr>
 <tr class="a">
@@ -863,7 +861,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
 <td>-</td></tr>
 <tr class="b">
 <td>junit:junit:jar:4.10</td>
@@ -872,15 +869,13 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
-<td><a class="externalLink" href="http://repository.jboss.org/nexus/content/groups/public//junit/junit/4.10/junit-4.10.jar"><img alt="Found at http://repository.jboss.org/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td></tr>
+<td>-</td></tr>
 <tr class="a">
 <td>org.apache.commons:commons-lang3:jar:3.1</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
-<td>-</td>
 <td>-</td>
 <td>-</td></tr>
 <tr class="b">
@@ -890,7 +885,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/apache/derby/derby/10.10.1.1/derby-10.10.1.1.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
 <td>-</td></tr>
 <tr class="a">
 <td>org.beanshell:bsh:jar:2.0b4</td>
@@ -898,7 +892,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
-<td>-</td>
 <td>-</td>
 <td>-</td></tr>
 <tr class="b">
@@ -908,7 +901,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.2/jackson-core-asl-1.9.2.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
 <td>-</td></tr>
 <tr class="a">
 <td>org.codehaus.jackson:jackson-jaxrs:jar:1.9.2</td>
@@ -916,7 +908,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-jaxrs/1.9.2/jackson-jaxrs-1.9.2.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
-<td>-</td>
 <td>-</td>
 <td>-</td></tr>
 <tr class="b">
@@ -926,7 +917,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.2/jackson-mapper-asl-1.9.2.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
 <td>-</td></tr>
 <tr class="a">
 <td>org.codehaus.jackson:jackson-xc:jar:1.9.2</td>
@@ -934,7 +924,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/codehaus/jackson/jackson-xc/1.9.2/jackson-xc-1.9.2.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
-<td>-</td>
 <td>-</td>
 <td>-</td></tr>
 <tr class="b">
@@ -944,7 +933,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
 <td>-</td></tr>
 <tr class="a">
 <td>org.hamcrest:hamcrest-core:jar:1.1</td>
@@ -953,15 +941,13 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
-<td><a class="externalLink" href="http://repository.jboss.org/nexus/content/groups/public//org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar"><img alt="Found at http://repository.jboss.org/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td></tr>
+<td>-</td></tr>
 <tr class="b">
 <td>org.mockito:mockito-all:jar:1.9.5</td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
-<td>-</td>
 <td>-</td>
 <td>-</td></tr>
 <tr class="a">
@@ -971,7 +957,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
 <td>-</td></tr>
 <tr class="b">
 <td>org.testng:testng:jar:6.8.7</td>
@@ -979,7 +964,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/testng/testng/6.8.7/testng-6.8.7.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
-<td>-</td>
 <td>-</td>
 <td>-</td></tr>
 <tr class="a">
@@ -989,7 +973,6 @@ Jackson JSON processor's data binding functionality.</p>
 <td>-</td>
 <td><a class="externalLink" href="http://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar"><img alt="Found at http://repo.maven.apache.org/maven2" src="images/icon_success_sml.gif" /></a></td>
 <td>-</td>
-<td>-</td>
 <td>-</td></tr>
 <tr class="b">
 <th>Total</th>
@@ -998,8 +981,7 @@ Jackson JSON processor's data binding functionality.</p>
 <th>m2.dev.java.net</th>
 <th>central</th>
 <th>eclipselink.repository</th>
-<th>jvnet-nexus-snapshots</th>
-<th>repository.jboss.org</th></tr>
+<th>jvnet-nexus-snapshots</th></tr>
 <tr class="a">
 <td>24 (compile: 1, test: 23)</td>
 <td>0</td>
@@ -1007,8 +989,7 @@ Jackson JSON processor's data binding functionality.</p>
 <td>2</td>
 <td>24</td>
 <td>0</td>
-<td>0</td>
-<td>2</td></tr></table></div>
+<td>0</td></tr></table></div>
       </div>
     </div>
     <div class="clear">

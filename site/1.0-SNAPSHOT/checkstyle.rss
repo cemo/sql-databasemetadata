@@ -8,8 +8,8 @@
     <language>en-us</language>
     <copyright>&#169;2011 - 2013</copyright>
     <item>
-      <title>File: 33,
-             Errors: 1427,
+      <title>File: 32,
+             Errors: 1411,
              Warnings: 0,
              Infos: 0
       </title>
@@ -43,20 +43,6 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.SuppressionDomain.java">com/github/jinahya/sql/databasemetadata/SuppressionDomain.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.BestRowIdentifier.java">com/github/jinahya/sql/databasemetadata/BestRowIdentifier.java</a>
                 </td>
                 <td>
@@ -66,7 +52,7 @@
                   0
                 </td>
                 <td>
-                  69
+                  61
                 </td>
               </tr>
                           <tr>
@@ -211,20 +197,6 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.TablePrivilege.java">com/github/jinahya/sql/databasemetadata/TablePrivilege.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  46
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.ClientInfoProperty.java">com/github/jinahya/sql/databasemetadata/ClientInfoProperty.java</a>
                 </td>
                 <td>
@@ -235,6 +207,20 @@
                 </td>
                 <td>
                   42
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.TablePrivilege.java">com/github/jinahya/sql/databasemetadata/TablePrivilege.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  46
                 </td>
               </tr>
                           <tr>
@@ -416,7 +402,7 @@
                   0
                 </td>
                 <td>
-                  107
+                  101
                 </td>
               </tr>
                           <tr>

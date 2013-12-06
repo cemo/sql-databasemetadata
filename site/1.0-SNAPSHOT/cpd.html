@@ -284,7 +284,7 @@
 <th>Line</th></tr>
 <tr class="b">
 <td>com/github/jinahya/sql/databasemetadata/Attribute.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Attribute.html#230">230</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Attribute.html#205">205</a></td></tr>
 <tr class="a">
 <td>com/github/jinahya/sql/databasemetadata/Column.java</td>
 <td><a href="./xref/com/github/jinahya/sql/databasemetadata/Column.html#231">231</a></td></tr>
@@ -389,23 +389,20 @@
 <th>File</th>
 <th>Line</th></tr>
 <tr class="b">
-<td>com/github/jinahya/sql/databasemetadata/BestRowIdentifier.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/BestRowIdentifier.html#113">113</a></td></tr>
-<tr class="a">
 <td>com/github/jinahya/sql/databasemetadata/ColumnPrivilege.java</td>
 <td><a href="./xref/com/github/jinahya/sql/databasemetadata/ColumnPrivilege.html#101">101</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td>com/github/jinahya/sql/databasemetadata/Index.java</td>
 <td><a href="./xref/com/github/jinahya/sql/databasemetadata/Index.html#108">108</a></td></tr>
-<tr class="a">
+<tr class="b">
 <td>com/github/jinahya/sql/databasemetadata/PrimaryKey.java</td>
 <td><a href="./xref/com/github/jinahya/sql/databasemetadata/PrimaryKey.html#99">99</a></td></tr>
-<tr class="b">
+<tr class="a">
 <td>com/github/jinahya/sql/databasemetadata/VersionColumn.java</td>
 <td><a href="./xref/com/github/jinahya/sql/databasemetadata/VersionColumn.html#97">97</a></td></tr>
-<tr class="a"><td colspan='2'>
+<tr class="b"><td colspan='2'>
 <div>
-<pre>                bestRowIdentifiers.add(retrieve(suppression, resultSet));
+<pre>                columnPrivileges.add(retrieve(suppression, resultSet));
             }
         } finally {
             resultSet.close();
@@ -413,14 +410,6 @@
     }
 
 
-    /**
-     *
-     * @param database
-     * @param suppression
-     * @param table
-     *
-     * @throws SQLException if a database access error occurs.
-     */
     public static void retrieve(final DatabaseMetaData database,
                                 final Suppression suppression,
                                 final Table table)
