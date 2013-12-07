@@ -208,11 +208,132 @@
 <th>File</th>
 <th>Line</th></tr>
 <tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/ExportedKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ExportedKey.html#174">174</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/ImportedKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ImportedKey.html#165">165</a></td></tr>
+<tr class="b"><td colspan='2'>
+<div>
+<pre>    }
+
+
+    // ------------------------------------------------------------ fkcolumnName
+    public Column getFkcolumnName() {
+
+        return fkcolumnName;
+    }
+
+
+    public void setFkcolumnName(final Column fkcolumnName) {
+
+        this.fkcolumnName = fkcolumnName;
+    }
+
+
+    // ------------------------------------------------------------------ keySeq
+    public short getKeySeq() {
+
+        return keySeq;
+    }
+
+
+    public void setKeySeq(final short keySeq) {
+
+        this.keySeq = keySeq;
+    }
+
+
+    // -------------------------------------------------------------- updateRule
+    public short getUpdateRule() {
+
+        return updateRule;
+    }
+
+
+    public void setUpdateRule(short updateRule) {
+
+        this.updateRule = updateRule;
+    }
+
+
+    // -------------------------------------------------------------- deleteRule
+    public short getDeleteRule() {
+
+        return deleteRule;
+    }
+
+
+    public void setDeleteRule(final short deleteRule) {
+
+        this.deleteRule = deleteRule;
+    }
+
+
+    // ------------------------------------------------------------------ fnname
+    public String getFkName() {
+
+        return fkName;
+    }
+
+
+    public void setFkName(final String fkName) {
+
+        this.fkName = fkName;
+    }
+
+
+    // ------------------------------------------------------------------ pkName
+    public String getPkName() {
+
+        return pkName;
+    }
+
+
+    public void setPkName(final String pkName) {
+
+        this.pkName = pkName;
+    }
+
+
+    // --------------------------------------------------------- deferrerability
+    /**
+     * Returns current value of {@link #deferrability}.
+     *
+     * @return current value of {@link #deferrability}.
+     */
+    public short getDeferrability() {
+
+        return deferrability;
+    }
+
+
+    /**
+     * Replaces value of {@link #deferrability} with given.
+     *
+     * @param deferrability new value for {@link #deferrability}
+     */
+    public void setDeferrability(final short deferrability) {
+
+        this.deferrability = deferrability;
+    }
+
+
+    /**
+     * primary key table catalog (may be {@code null}).
+     */
+    @ColumnLabel(&quot;PKTABLE_CAT&quot;)
+    @SuppressionPath(&quot;exportedKey/pktableCat&quot;)</pre></div></td></tr></table>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>File</th>
+<th>Line</th></tr>
+<tr class="b">
 <td>com/github/jinahya/sql/databasemetadata/Column.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Column.html#166">166</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Column.html#160">160</a></td></tr>
 <tr class="a">
 <td>com/github/jinahya/sql/databasemetadata/VersionColumn.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/VersionColumn.html#134">134</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/VersionColumn.html#131">131</a></td></tr>
 <tr class="b"><td colspan='2'>
 <div>
 <pre>    }
@@ -287,7 +408,7 @@
 <td><a href="./xref/com/github/jinahya/sql/databasemetadata/Attribute.html#205">205</a></td></tr>
 <tr class="a">
 <td>com/github/jinahya/sql/databasemetadata/Column.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Column.html#231">231</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Column.html#225">225</a></td></tr>
 <tr class="b"><td colspan='2'>
 <div>
 <pre>    }
@@ -355,10 +476,10 @@
 <th>Line</th></tr>
 <tr class="b">
 <td>com/github/jinahya/sql/databasemetadata/PrimaryKey.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/PrimaryKey.html#99">99</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/PrimaryKey.html#95">95</a></td></tr>
 <tr class="a">
 <td>com/github/jinahya/sql/databasemetadata/VersionColumn.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/VersionColumn.html#97">97</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/VersionColumn.html#94">94</a></td></tr>
 <tr class="b"><td colspan='2'>
 <div>
 <pre>                primaryKeys.add(retrieve(suppression, resultSet));
@@ -390,13 +511,13 @@
 <th>Line</th></tr>
 <tr class="b">
 <td>com/github/jinahya/sql/databasemetadata/ColumnPrivilege.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ColumnPrivilege.html#101">101</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ColumnPrivilege.html#97">97</a></td></tr>
 <tr class="a">
 <td>com/github/jinahya/sql/databasemetadata/PrimaryKey.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/PrimaryKey.html#99">99</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/PrimaryKey.html#95">95</a></td></tr>
 <tr class="b">
 <td>com/github/jinahya/sql/databasemetadata/VersionColumn.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/VersionColumn.html#97">97</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/VersionColumn.html#94">94</a></td></tr>
 <tr class="a"><td colspan='2'>
 <div>
 <pre>                columnPrivileges.add(retrieve(suppression, resultSet));
@@ -420,7 +541,42 @@
 
         retrieve(database, suppression,
                  table.getSchema().getCatalog().getTableCat(),
-                 table.getSchema().getTableSchem(), table.getTableName(),</pre></div></td></tr></table></div>
+                 table.getSchema().getTableSchem(), table.getTableName(),</pre></div></td></tr></table>
+<table border="0" class="bodyTable">
+<tr class="b">
+<th>File</th>
+<th>Line</th></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/ExportedKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ExportedKey.html#73">73</a></td></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/ImportedKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ImportedKey.html#73">73</a></td></tr>
+<tr class="a"><td colspan='2'>
+<div>
+<pre>                    ExportedKey.class, suppression, resultSet));
+            }
+        } finally {
+            resultSet.close();
+        }
+    }
+
+
+    public static void retrieve(final DatabaseMetaData database,
+                                final Suppression suppression,
+                                final Table table)
+        throws SQLException {
+
+        Objects.requireNonNull(database, &quot;null database&quot;);
+
+        Objects.requireNonNull(suppression, &quot;null suppression&quot;);
+
+        Objects.requireNonNull(table, &quot;null table&quot;);
+
+        retrieve(database, suppression,
+                 table.getSchema().getCatalog().getTableCat(),
+                 table.getSchema().getTableSchem(), table.getTableName(),
+                 table.getExportedKeys());</pre></div></td></tr></table></div>
       </div>
     </div>
     <div class="clear">
