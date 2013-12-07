@@ -9,7 +9,7 @@
     <copyright>&#169;2011 - 2013</copyright>
     <item>
       <title>File: 32,
-             Errors: 1411,
+             Errors: 1506,
              Warnings: 0,
              Infos: 0
       </title>
@@ -39,6 +39,20 @@
                 </td>
                 <td>
                   41
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.IndexInfo.java">com/github/jinahya/sql/databasemetadata/IndexInfo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  94
                 </td>
               </tr>
                           <tr>
@@ -108,7 +122,7 @@
                   0
                 </td>
                 <td>
-                  62
+                  64
                 </td>
               </tr>
                           <tr>
@@ -123,20 +137,6 @@
                 </td>
                 <td>
                   29
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Index.java">com/github/jinahya/sql/databasemetadata/Index.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  100
                 </td>
               </tr>
                           <tr>
@@ -178,7 +178,21 @@
                   0
                 </td>
                 <td>
-                  12
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.XmlElementNillableBySuppression.java">com/github/jinahya/sql/databasemetadata/XmlElementNillableBySuppression.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
                 </td>
               </tr>
                           <tr>
@@ -192,12 +206,12 @@
                   0
                 </td>
                 <td>
-                  19
+                  17
                 </td>
               </tr>
                           <tr>
                 <td>
-                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.ClientInfoProperty.java">com/github/jinahya/sql/databasemetadata/ClientInfoProperty.java</a>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.XmlElementNillableBySpecification.java">com/github/jinahya/sql/databasemetadata/XmlElementNillableBySpecification.java</a>
                 </td>
                 <td>
                   0
@@ -206,7 +220,7 @@
                   0
                 </td>
                 <td>
-                  42
+                  2
                 </td>
               </tr>
                           <tr>
@@ -221,6 +235,20 @@
                 </td>
                 <td>
                   46
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.ClientInfoProperty.java">com/github/jinahya/sql/databasemetadata/ClientInfoProperty.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  42
                 </td>
               </tr>
                           <tr>
@@ -248,7 +276,7 @@
                   0
                 </td>
                 <td>
-                  125
+                  126
                 </td>
               </tr>
                           <tr>
@@ -295,20 +323,6 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.XmlNillableBySpecification.java">com/github/jinahya/sql/databasemetadata/XmlNillableBySpecification.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.Table.java">com/github/jinahya/sql/databasemetadata/Table.java</a>
                 </td>
                 <td>
@@ -318,7 +332,7 @@
                   0
                 </td>
                 <td>
-                  89
+                  92
                 </td>
               </tr>
                           <tr>
@@ -332,7 +346,7 @@
                   0
                 </td>
                 <td>
-                  12
+                  108
                 </td>
               </tr>
                           <tr>
@@ -360,7 +374,7 @@
                   0
                 </td>
                 <td>
-                  59
+                  57
                 </td>
               </tr>
                           <tr>
@@ -375,20 +389,6 @@
                 </td>
                 <td>
                   1
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://www.jinahya.com/mvn/site/com.github.jinahya/sql-databasemetadata/1.0-SNAPSHOT/checkstyle.html#com.github.jinahya.sql.databasemetadata.XmlNillableBySuppression.java">com/github/jinahya/sql/databasemetadata/XmlNillableBySuppression.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
                 </td>
               </tr>
                           <tr>

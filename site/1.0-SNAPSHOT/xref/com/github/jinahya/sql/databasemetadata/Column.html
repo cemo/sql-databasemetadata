@@ -33,7 +33,7 @@
 <a class="jxr_linenumber" name="23" href="#23">23</a>  <strong class="jxr_keyword">import</strong> com.github.jinahya.sql.databasemetadata.Suppression;
 <a class="jxr_linenumber" name="24" href="#24">24</a>  <strong class="jxr_keyword">import</strong> com.github.jinahya.sql.databasemetadata.SuppressionPath;
 <a class="jxr_linenumber" name="25" href="#25">25</a>  <strong class="jxr_keyword">import</strong> com.github.jinahya.sql.databasemetadata.NotUsed;
-<a class="jxr_linenumber" name="26" href="#26">26</a>  <strong class="jxr_keyword">import</strong> com.github.jinahya.sql.databasemetadata.XmlNillableBySpecification;
+<a class="jxr_linenumber" name="26" href="#26">26</a>  <strong class="jxr_keyword">import</strong> com.github.jinahya.sql.databasemetadata.XmlElementNillableBySpecification;
 <a class="jxr_linenumber" name="27" href="#27">27</a>  <strong class="jxr_keyword">import</strong> java.sql.DatabaseMetaData;
 <a class="jxr_linenumber" name="28" href="#28">28</a>  <strong class="jxr_keyword">import</strong> java.sql.ResultSet;
 <a class="jxr_linenumber" name="29" href="#29">29</a>  <strong class="jxr_keyword">import</strong> java.sql.SQLException;
@@ -524,7 +524,7 @@
 <a class="jxr_linenumber" name="514" href="#514">514</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="515" href="#515">515</a>     @ColumnLabel(<span class="jxr_string">"REMARKS"</span>)
 <a class="jxr_linenumber" name="516" href="#516">516</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="517" href="#517">517</a>     @XmlNillableBySpecification
+<a class="jxr_linenumber" name="517" href="#517">517</a>     @XmlElementNillableBySpecification
 <a class="jxr_linenumber" name="518" href="#518">518</a>     <strong class="jxr_keyword">private</strong> String remarks;
 <a class="jxr_linenumber" name="519" href="#519">519</a> 
 <a class="jxr_linenumber" name="520" href="#520">520</a> 
@@ -534,7 +534,7 @@
 <a class="jxr_linenumber" name="524" href="#524">524</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="525" href="#525">525</a>     @ColumnLabel(<span class="jxr_string">"COLUMN_DEF"</span>)
 <a class="jxr_linenumber" name="526" href="#526">526</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="527" href="#527">527</a>     @XmlNillableBySpecification
+<a class="jxr_linenumber" name="527" href="#527">527</a>     @XmlElementNillableBySpecification
 <a class="jxr_linenumber" name="528" href="#528">528</a>     <strong class="jxr_keyword">private</strong> String columnDef;
 <a class="jxr_linenumber" name="529" href="#529">529</a> 
 <a class="jxr_linenumber" name="530" href="#530">530</a> 
@@ -589,7 +589,7 @@
 <a class="jxr_linenumber" name="579" href="#579">579</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="580" href="#580">580</a>     @ColumnLabel(<span class="jxr_string">"SCOPE_CATALOG"</span>)
 <a class="jxr_linenumber" name="581" href="#581">581</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="582" href="#582">582</a>     @XmlNillableBySpecification
+<a class="jxr_linenumber" name="582" href="#582">582</a>     @XmlElementNillableBySpecification
 <a class="jxr_linenumber" name="583" href="#583">583</a>     <strong class="jxr_keyword">private</strong> String scopeCatalog;
 <a class="jxr_linenumber" name="584" href="#584">584</a> 
 <a class="jxr_linenumber" name="585" href="#585">585</a> 
@@ -599,7 +599,7 @@
 <a class="jxr_linenumber" name="589" href="#589">589</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="590" href="#590">590</a>     @ColumnLabel(<span class="jxr_string">"SCOPE_SCHEMA"</span>)
 <a class="jxr_linenumber" name="591" href="#591">591</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="592" href="#592">592</a>     @XmlNillableBySpecification
+<a class="jxr_linenumber" name="592" href="#592">592</a>     @XmlElementNillableBySpecification
 <a class="jxr_linenumber" name="593" href="#593">593</a>     <strong class="jxr_keyword">private</strong> String scopeSchema;
 <a class="jxr_linenumber" name="594" href="#594">594</a> 
 <a class="jxr_linenumber" name="595" href="#595">595</a> 
@@ -609,7 +609,7 @@
 <a class="jxr_linenumber" name="599" href="#599">599</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="600" href="#600">600</a>     @ColumnLabel(<span class="jxr_string">"SCOPE_TABLE"</span>)
 <a class="jxr_linenumber" name="601" href="#601">601</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="602" href="#602">602</a>     @XmlNillableBySpecification
+<a class="jxr_linenumber" name="602" href="#602">602</a>     @XmlElementNillableBySpecification
 <a class="jxr_linenumber" name="603" href="#603">603</a>     <strong class="jxr_keyword">private</strong> String scopeTable;
 <a class="jxr_linenumber" name="604" href="#604">604</a> 
 <a class="jxr_linenumber" name="605" href="#605">605</a> 
@@ -621,7 +621,7 @@
 <a class="jxr_linenumber" name="611" href="#611">611</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="612" href="#612">612</a>     @ColumnLabel(<span class="jxr_string">"SOURCE_DATA_TYPE"</span>)
 <a class="jxr_linenumber" name="613" href="#613">613</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="614" href="#614">614</a>     @XmlNillableBySpecification
+<a class="jxr_linenumber" name="614" href="#614">614</a>     @XmlElementNillableBySpecification
 <a class="jxr_linenumber" name="615" href="#615">615</a>     <strong class="jxr_keyword">private</strong> String sourceDataType;
 <a class="jxr_linenumber" name="616" href="#616">616</a> 
 <a class="jxr_linenumber" name="617" href="#617">617</a> 
