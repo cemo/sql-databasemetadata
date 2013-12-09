@@ -100,10 +100,10 @@
 <th>Line</th></tr>
 <tr class="b">
 <td>com/github/jinahya/sql/databasemetadata/Metadata.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Metadata.html#214">214</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Metadata.html#217">217</a></td></tr>
 <tr class="a">
 <td>com/github/jinahya/sql/databasemetadata/SuppressionKey.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/SuppressionKey.html#170">170</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/SuppressionKey.html#169">169</a></td></tr>
 <tr class="b"><td colspan='2'>
 <div>
 <pre>    }
@@ -209,10 +209,10 @@
 <th>Line</th></tr>
 <tr class="b">
 <td>com/github/jinahya/sql/databasemetadata/ExportedKey.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ExportedKey.html#174">174</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ExportedKey.html#173">173</a></td></tr>
 <tr class="a">
 <td>com/github/jinahya/sql/databasemetadata/ImportedKey.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ImportedKey.html#165">165</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ImportedKey.html#176">176</a></td></tr>
 <tr class="b"><td colspan='2'>
 <div>
 <pre>    }
@@ -329,11 +329,347 @@
 <th>File</th>
 <th>Line</th></tr>
 <tr class="b">
-<td>com/github/jinahya/sql/databasemetadata/Column.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Column.html#160">160</a></td></tr>
+<td>com/github/jinahya/sql/databasemetadata/ExportedKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ExportedKey.html#72">72</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/ImportedKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ImportedKey.html#78">78</a></td></tr>
+<tr class="b"><td colspan='2'>
+<div>
+<pre>                    ExportedKey.class, suppression, resultSet));
+            }
+        } finally {
+            resultSet.close();
+        }
+    }
+
+
+    public static void retrieve(final DatabaseMetaData database,
+                                final Suppression suppression,
+                                final Table table)
+        throws SQLException {
+
+        if (database == null) { throw new NullPointerException(&quot;null database&quot;);}
+
+        if (suppression == null) { throw new NullPointerException(&quot;null suppression&quot;);}
+
+        if (table == null) { throw new NullPointerException(&quot;table&quot;); }
+
+        retrieve(database, suppression,
+                 table.getSchema().getCatalog().getTableCat(),
+                 table.getSchema().getTableSchem(), table.getTableName(),
+                 table.getExportedKeys());</pre></div></td></tr></table>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>File</th>
+<th>Line</th></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/TablePrivilege.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/TablePrivilege.html#85">85</a></td></tr>
 <tr class="a">
 <td>com/github/jinahya/sql/databasemetadata/VersionColumn.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/VersionColumn.html#131">131</a></td></tr>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/VersionColumn.html#83">83</a></td></tr>
+<tr class="b"><td colspan='2'>
+<div>
+<pre>                    TablePrivilege.class, suppression, resultSet));
+            }
+        } finally {
+            resultSet.close();
+        }
+    }
+
+
+    public static void retrieve(final DatabaseMetaData database,
+                                final Suppression suppression,
+                                final Table table)
+        throws SQLException {
+
+        if (database == null) {
+            throw new NullPointerException(&quot;null database&quot;);
+        }
+
+        if (suppression == null) {
+            throw new NullPointerException(&quot;null suppression&quot;);
+        }
+
+        if (table == null) {
+            throw new NullPointerException(&quot;null table&quot;);
+        }
+
+        retrieve(database, suppression,
+                 table.getSchema().getCatalog().getTableCat(),
+                 table.getSchema().getTableSchem(),
+                 table.getTableName(),
+                 table.getTablePrivileges());</pre></div></td></tr></table>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>File</th>
+<th>Line</th></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/BestRowIdentifier.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/BestRowIdentifier.html#88">88</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/ColumnPrivilege.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ColumnPrivilege.html#86">86</a></td></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/ExportedKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ExportedKey.html#72">72</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/ImportedKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ImportedKey.html#78">78</a></td></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/IndexInfo.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/IndexInfo.html#98">98</a></td></tr>
+<tr class="a"><td colspan='2'>
+<div>
+<pre>                    BestRowIdentifier.class, suppression, resultSet));
+            }
+        } finally {
+            resultSet.close();
+        }
+    }
+
+
+    /**
+     *
+     * @param database
+     * @param suppression
+     * @param table
+     *
+     * @throws SQLException if a database access error occurs.
+     */
+    public static void retrieve(final DatabaseMetaData database,
+                                final Suppression suppression,
+                                final Table table)
+        throws SQLException {
+
+        if (database == null) {
+            throw new NullPointerException(&quot;null database&quot;);
+        }
+
+        if (suppression == null) {
+            throw new NullPointerException(&quot;null suppression&quot;);
+        }
+
+        if (table == null) {
+            throw new NullPointerException(&quot;table&quot;);
+        }
+
+        retrieve(database, suppression,
+                 table.getSchema().getCatalog().getTableCat(),
+                 table.getSchema().getTableSchem(), table.getTableName(),</pre></div></td></tr></table>
+<table border="0" class="bodyTable">
+<tr class="b">
+<th>File</th>
+<th>Line</th></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/ExportedKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ExportedKey.html#72">72</a></td></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/ImportedKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ImportedKey.html#78">78</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/PrimaryKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/PrimaryKey.html#94">94</a></td></tr>
+<tr class="b"><td colspan='2'>
+<div>
+<pre>                    ExportedKey.class, suppression, resultSet));
+            }
+        } finally {
+            resultSet.close();
+        }
+    }
+
+
+    public static void retrieve(final DatabaseMetaData database,
+                                final Suppression suppression,
+                                final Table table)
+        throws SQLException {
+
+        if (database == null) { throw new NullPointerException(&quot;null database&quot;);}
+
+        if (suppression == null) { throw new NullPointerException(&quot;null suppression&quot;);}
+
+        if (table == null) { throw new NullPointerException(&quot;table&quot;); }
+
+        retrieve(database, suppression,
+                 table.getSchema().getCatalog().getTableCat(),
+                 table.getSchema().getTableSchem(), table.getTableName(),
+                 table.getExportedKeys());</pre></div></td></tr></table>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>File</th>
+<th>Line</th></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/BestRowIdentifier.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/BestRowIdentifier.html#88">88</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/ColumnPrivilege.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ColumnPrivilege.html#86">86</a></td></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/IndexInfo.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/IndexInfo.html#98">98</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/PrimaryKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/PrimaryKey.html#94">94</a></td></tr>
+<tr class="b"><td colspan='2'>
+<div>
+<pre>                    BestRowIdentifier.class, suppression, resultSet));
+            }
+        } finally {
+            resultSet.close();
+        }
+    }
+
+
+    /**
+     *
+     * @param database
+     * @param suppression
+     * @param table
+     *
+     * @throws SQLException if a database access error occurs.
+     */
+    public static void retrieve(final DatabaseMetaData database,
+                                final Suppression suppression,
+                                final Table table)
+        throws SQLException {
+
+        if (database == null) {
+            throw new NullPointerException(&quot;null database&quot;);
+        }
+
+        if (suppression == null) {
+            throw new NullPointerException(&quot;null suppression&quot;);
+        }
+
+        if (table == null) {
+            throw new NullPointerException(&quot;table&quot;);
+        }
+
+        retrieve(database, suppression,
+                 table.getSchema().getCatalog().getTableCat(),
+                 table.getSchema().getTableSchem(), table.getTableName(),</pre></div></td></tr></table>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>File</th>
+<th>Line</th></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/Column.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Column.html#133">133</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/ColumnPrivilege.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ColumnPrivilege.html#86">86</a></td></tr>
+<tr class="b"><td colspan='2'>
+<div>
+<pre>                columns.add(column);
+            }
+        } finally {
+            resultSet.close();
+        }
+    }
+
+
+    /**
+     *
+     * @param database
+     * @param suppression
+     * @param table
+     *
+     * @throws SQLException if a database access error occurs.
+     */
+    public static void retrieve(final DatabaseMetaData database,
+                                final Suppression suppression,
+                                final Table table)
+        throws SQLException {
+
+        if (database == null) {
+            throw new NullPointerException(&quot;null database&quot;);
+        }
+
+        if (suppression == null) {
+            throw new NullPointerException(&quot;null suppression&quot;);
+        }
+
+        if (table == null) {
+            throw new NullPointerException(&quot;table&quot;);
+        }
+
+        retrieve(database, suppression,
+                 table.getSchema().getCatalog().getTableCat(),
+                 table.getSchema().getTableSchem(), table.getTableName(),
+                 null,
+                 table.getColumns());</pre></div></td></tr></table>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>File</th>
+<th>Line</th></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/BestRowIdentifier.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/BestRowIdentifier.html#88">88</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/Column.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Column.html#133">133</a></td></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/ExportedKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ExportedKey.html#72">72</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/ImportedKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ImportedKey.html#78">78</a></td></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/IndexInfo.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/IndexInfo.html#98">98</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/PrimaryKey.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/PrimaryKey.html#94">94</a></td></tr>
+<tr class="b"><td colspan='2'>
+<div>
+<pre>                    BestRowIdentifier.class, suppression, resultSet));
+            }
+        } finally {
+            resultSet.close();
+        }
+    }
+
+
+    /**
+     *
+     * @param database
+     * @param suppression
+     * @param table
+     *
+     * @throws SQLException if a database access error occurs.
+     */
+    public static void retrieve(final DatabaseMetaData database,
+                                final Suppression suppression,
+                                final Table table)
+        throws SQLException {
+
+        if (database == null) {
+            throw new NullPointerException(&quot;null database&quot;);
+        }
+
+        if (suppression == null) {
+            throw new NullPointerException(&quot;null suppression&quot;);
+        }
+
+        if (table == null) {
+            throw new NullPointerException(&quot;table&quot;);
+        }
+
+        retrieve(database, suppression,
+                 table.getSchema().getCatalog().getTableCat(),
+                 table.getSchema().getTableSchem(), table.getTableName(),</pre></div></td></tr></table>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>File</th>
+<th>Line</th></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/Column.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Column.html#175">175</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/VersionColumn.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/VersionColumn.html#126">126</a></td></tr>
 <tr class="b"><td colspan='2'>
 <div>
 <pre>    }
@@ -404,12 +740,96 @@
 <th>File</th>
 <th>Line</th></tr>
 <tr class="b">
-<td>com/github/jinahya/sql/databasemetadata/Attribute.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Attribute.html#205">205</a></td></tr>
+<td>com/github/jinahya/sql/databasemetadata/Function.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Function.html#86">86</a></td></tr>
 <tr class="a">
-<td>com/github/jinahya/sql/databasemetadata/Column.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Column.html#225">225</a></td></tr>
+<td>com/github/jinahya/sql/databasemetadata/Procedure.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Procedure.html#86">86</a></td></tr>
 <tr class="b"><td colspan='2'>
+<div>
+<pre>                    Function.class, suppression, resultSet));
+            }
+        } finally {
+            resultSet.close();
+        }
+    }
+
+
+    public static void retrieve(final DatabaseMetaData database,
+                                final Suppression suppression,
+                                final Schema schema)
+        throws SQLException {
+
+        if (database == null) {
+            throw new NullPointerException(&quot;null database&quot;);
+        }
+
+        if (suppression == null) {
+            throw new NullPointerException(&quot;null suppression&quot;);
+        }
+
+        if (schema == null) {
+            throw new NullPointerException(&quot;schema&quot;);
+        }
+
+        retrieve(database, suppression,
+                 schema.getCatalog().getTableCat(), schema.getTableSchem(),
+                 null,
+                 schema.getFunctions());</pre></div></td></tr></table>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>File</th>
+<th>Line</th></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/Function.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Function.html#86">86</a></td></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/Procedure.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Procedure.html#86">86</a></td></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/Table.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Table.html#159">159</a></td></tr>
+<tr class="a"><td colspan='2'>
+<div>
+<pre>                    Function.class, suppression, resultSet));
+            }
+        } finally {
+            resultSet.close();
+        }
+    }
+
+
+    public static void retrieve(final DatabaseMetaData database,
+                                final Suppression suppression,
+                                final Schema schema)
+        throws SQLException {
+
+        if (database == null) {
+            throw new NullPointerException(&quot;null database&quot;);
+        }
+
+        if (suppression == null) {
+            throw new NullPointerException(&quot;null suppression&quot;);
+        }
+
+        if (schema == null) {
+            throw new NullPointerException(&quot;schema&quot;);
+        }
+
+        retrieve(database, suppression,
+                 schema.getCatalog().getTableCat(), schema.getTableSchem(),
+                 null,</pre></div></td></tr></table>
+<table border="0" class="bodyTable">
+<tr class="b">
+<th>File</th>
+<th>Line</th></tr>
+<tr class="a">
+<td>com/github/jinahya/sql/databasemetadata/Attribute.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Attribute.html#214">214</a></td></tr>
+<tr class="b">
+<td>com/github/jinahya/sql/databasemetadata/Column.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Column.html#240">240</a></td></tr>
+<tr class="a"><td colspan='2'>
 <div>
 <pre>    }
 
@@ -471,56 +891,18 @@
 
         return attrDef;</pre></div></td></tr></table>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>File</th>
 <th>Line</th></tr>
-<tr class="b">
-<td>com/github/jinahya/sql/databasemetadata/PrimaryKey.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/PrimaryKey.html#95">95</a></td></tr>
 <tr class="a">
-<td>com/github/jinahya/sql/databasemetadata/VersionColumn.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/VersionColumn.html#94">94</a></td></tr>
-<tr class="b"><td colspan='2'>
-<div>
-<pre>                primaryKeys.add(retrieve(suppression, resultSet));
-            }
-        } finally {
-            resultSet.close();
-        }
-    }
-
-
-    public static void retrieve(final DatabaseMetaData database,
-                                final Suppression suppression,
-                                final Table table)
-        throws SQLException {
-
-        Objects.requireNonNull(database, &quot;null database&quot;);
-
-        Objects.requireNonNull(suppression, &quot;null suppression&quot;);
-
-        Objects.requireNonNull(table, &quot;null table&quot;);
-
-        retrieve(database, suppression,
-                 table.getSchema().getCatalog().getTableCat(),
-                 table.getSchema().getTableSchem(), table.getTableName(),
-                 table.getPrimaryKeys());</pre></div></td></tr></table>
-<table border="0" class="bodyTable">
-<tr class="a">
-<th>File</th>
-<th>Line</th></tr>
+<td>com/github/jinahya/sql/databasemetadata/Table.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Table.html#159">159</a></td></tr>
 <tr class="b">
-<td>com/github/jinahya/sql/databasemetadata/ColumnPrivilege.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ColumnPrivilege.html#97">97</a></td></tr>
-<tr class="a">
-<td>com/github/jinahya/sql/databasemetadata/PrimaryKey.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/PrimaryKey.html#95">95</a></td></tr>
-<tr class="b">
-<td>com/github/jinahya/sql/databasemetadata/VersionColumn.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/VersionColumn.html#94">94</a></td></tr>
+<td>com/github/jinahya/sql/databasemetadata/UserDefinedType.java</td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/UserDefinedType.html#95">95</a></td></tr>
 <tr class="a"><td colspan='2'>
 <div>
-<pre>                columnPrivileges.add(retrieve(suppression, resultSet));
+<pre>                    Table.class, suppression, resultSet));
             }
         } finally {
             resultSet.close();
@@ -530,53 +912,25 @@
 
     public static void retrieve(final DatabaseMetaData database,
                                 final Suppression suppression,
-                                final Table table)
+                                final Schema schema)
         throws SQLException {
 
-        Objects.requireNonNull(database, &quot;null database&quot;);
-
-        Objects.requireNonNull(suppression, &quot;null suppression&quot;);
-
-        Objects.requireNonNull(table, &quot;null table&quot;);
-
-        retrieve(database, suppression,
-                 table.getSchema().getCatalog().getTableCat(),
-                 table.getSchema().getTableSchem(), table.getTableName(),</pre></div></td></tr></table>
-<table border="0" class="bodyTable">
-<tr class="b">
-<th>File</th>
-<th>Line</th></tr>
-<tr class="a">
-<td>com/github/jinahya/sql/databasemetadata/ExportedKey.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ExportedKey.html#73">73</a></td></tr>
-<tr class="b">
-<td>com/github/jinahya/sql/databasemetadata/ImportedKey.java</td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ImportedKey.html#73">73</a></td></tr>
-<tr class="a"><td colspan='2'>
-<div>
-<pre>                    ExportedKey.class, suppression, resultSet));
-            }
-        } finally {
-            resultSet.close();
+        if (database == null) {
+            throw new NullPointerException(&quot;null database&quot;);
         }
-    }
 
+        if (suppression == null) {
+            throw new NullPointerException(&quot;null suppression&quot;);
+        }
 
-    public static void retrieve(final DatabaseMetaData database,
-                                final Suppression suppression,
-                                final Table table)
-        throws SQLException {
-
-        Objects.requireNonNull(database, &quot;null database&quot;);
-
-        Objects.requireNonNull(suppression, &quot;null suppression&quot;);
-
-        Objects.requireNonNull(table, &quot;null table&quot;);
+        if (schema == null) {
+            throw new NullPointerException(&quot;schema&quot;);
+        }
 
         retrieve(database, suppression,
-                 table.getSchema().getCatalog().getTableCat(),
-                 table.getSchema().getTableSchem(), table.getTableName(),
-                 table.getExportedKeys());</pre></div></td></tr></table></div>
+                 schema.getCatalog().getTableCat(), schema.getTableSchem(),
+                 null, null,
+                 schema.getTables());</pre></div></td></tr></table></div>
       </div>
     </div>
     <div class="clear">

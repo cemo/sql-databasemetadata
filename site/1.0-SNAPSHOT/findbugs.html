@@ -105,7 +105,7 @@
 <th>Missing Classes</th></tr>
 <tr class="b">
 <td>33</td>
-<td>4</td>
+<td>7</td>
 <td>0</td>
 <td>0</td></tr></table></div>
 <div class="section">
@@ -118,73 +118,103 @@
 <td><a href="#com.github.jinahya.sql.databasemetadata.Catalog">com.github.jinahya.sql.databasemetadata.Catalog</a></td>
 <td>1</td></tr>
 <tr class="a">
+<td><a href="#com.github.jinahya.sql.databasemetadata.ColumnRetriever">com.github.jinahya.sql.databasemetadata.ColumnRetriever</a></td>
+<td>3</td></tr>
+<tr class="b">
 <td><a href="#com.github.jinahya.sql.databasemetadata.PrimaryKey">com.github.jinahya.sql.databasemetadata.PrimaryKey</a></td>
 <td>1</td></tr>
-<tr class="b">
+<tr class="a">
 <td><a href="#com.github.jinahya.sql.databasemetadata.Schema">com.github.jinahya.sql.databasemetadata.Schema</a></td>
 <td>1</td></tr>
-<tr class="a">
+<tr class="b">
 <td><a href="#com.github.jinahya.sql.databasemetadata.Table">com.github.jinahya.sql.databasemetadata.Table</a></td>
 <td>1</td></tr></table></div><a name="com.github.jinahya.sql.databasemetadata.Catalog"></a>
 <div class="section">
 <h3>com.github.jinahya.sql.databasemetadata.Catalog<a name="com.github.jinahya.sql.databasemetadata.Catalog"></a></h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="a">
+<tr class="b">
 <td>com.github.jinahya.sql.databasemetadata.Catalog defines compareTo(Catalog) and uses Object.equals()</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#EQ_COMPARETO_USE_OBJECT_EQUALS">EQ_COMPARETO_USE_OBJECT_EQUALS</a></td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Catalog.html#135">135-137</a></td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Catalog.html#146">146-150</a></td>
+<td>Medium</td></tr></table></div><a name="com.github.jinahya.sql.databasemetadata.ColumnRetriever"></a>
+<div class="section">
+<h3>com.github.jinahya.sql.databasemetadata.ColumnRetriever<a name="com.github.jinahya.sql.databasemetadata.ColumnRetriever"></a></h3>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th></tr>
+<tr class="b">
+<td>com.github.jinahya.sql.databasemetadata.ColumnRetriever.retrieve(Class, Object, Suppression, ResultSet) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#DM_NUMBER_CTOR">DM_NUMBER_CTOR</a></td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ColumnRetriever.html#171">171</a></td>
+<td>Medium</td></tr>
+<tr class="a">
+<td>com.github.jinahya.sql.databasemetadata.ColumnRetriever.retrieve(Class, Object, Suppression, ResultSet) invokes inefficient new Long(long) constructor; use Long.valueOf(long) instead</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#DM_NUMBER_CTOR">DM_NUMBER_CTOR</a></td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ColumnRetriever.html#193">193</a></td>
+<td>Medium</td></tr>
+<tr class="b">
+<td>com.github.jinahya.sql.databasemetadata.ColumnRetriever.retrieve(Class, Object, Suppression, ResultSet) invokes inefficient new Short(short) constructor; use Short.valueOf(short) instead</td>
+<td>PERFORMANCE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#DM_NUMBER_CTOR">DM_NUMBER_CTOR</a></td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/ColumnRetriever.html#149">149</a></td>
 <td>Medium</td></tr></table></div><a name="com.github.jinahya.sql.databasemetadata.PrimaryKey"></a>
 <div class="section">
 <h3>com.github.jinahya.sql.databasemetadata.PrimaryKey<a name="com.github.jinahya.sql.databasemetadata.PrimaryKey"></a></h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="a">
+<tr class="b">
 <td>com.github.jinahya.sql.databasemetadata.PrimaryKey defines compareTo(PrimaryKey) and uses Object.equals()</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#EQ_COMPARETO_USE_OBJECT_EQUALS">EQ_COMPARETO_USE_OBJECT_EQUALS</a></td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/PrimaryKey.html#137">137</a></td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/PrimaryKey.html#136">136</a></td>
 <td>Medium</td></tr></table></div><a name="com.github.jinahya.sql.databasemetadata.Schema"></a>
 <div class="section">
 <h3>com.github.jinahya.sql.databasemetadata.Schema<a name="com.github.jinahya.sql.databasemetadata.Schema"></a></h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="a">
+<tr class="b">
 <td>com.github.jinahya.sql.databasemetadata.Schema defines compareTo(Schema) and uses Object.equals()</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#EQ_COMPARETO_USE_OBJECT_EQUALS">EQ_COMPARETO_USE_OBJECT_EQUALS</a></td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Schema.html#184">184-191</a></td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Schema.html#171">171-180</a></td>
 <td>Medium</td></tr></table></div><a name="com.github.jinahya.sql.databasemetadata.Table"></a>
 <div class="section">
 <h3>com.github.jinahya.sql.databasemetadata.Table<a name="com.github.jinahya.sql.databasemetadata.Table"></a></h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="a">
+<tr class="b">
 <td>com.github.jinahya.sql.databasemetadata.Table defines compareTo(Table) and uses Object.equals()</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#EQ_COMPARETO_USE_OBJECT_EQUALS">EQ_COMPARETO_USE_OBJECT_EQUALS</a></td>
-<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Table.html#206">206-218</a></td>
+<td><a href="./xref/com/github/jinahya/sql/databasemetadata/Table.html#219">219-233</a></td>
 <td>Medium</td></tr></table></div>
       </div>
     </div>
