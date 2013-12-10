@@ -127,7 +127,7 @@
 <a class="jxr_linenumber" name="117" href="#117">117</a>         }
 <a class="jxr_linenumber" name="118" href="#118">118</a> 
 <a class="jxr_linenumber" name="119" href="#119">119</a>         <strong class="jxr_keyword">if</strong> (table == <strong class="jxr_keyword">null</strong>) {
-<a class="jxr_linenumber" name="120" href="#120">120</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> NullPointerException(<span class="jxr_string">"table"</span>);
+<a class="jxr_linenumber" name="120" href="#120">120</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> NullPointerException(<span class="jxr_string">"null table"</span>);
 <a class="jxr_linenumber" name="121" href="#121">121</a>         }
 <a class="jxr_linenumber" name="122" href="#122">122</a> 
 <a class="jxr_linenumber" name="123" href="#123">123</a>         retrieve(database, suppression,
@@ -361,7 +361,7 @@
 <a class="jxr_linenumber" name="351" href="#351">351</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="352" href="#352">352</a>     @ColumnLabel(<span class="jxr_string">"NON_UNIQUE"</span>)
 <a class="jxr_linenumber" name="353" href="#353">353</a>     @XmlElement(required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="354" href="#354">354</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">boolean</strong> nonUnique;
+<a class="jxr_linenumber" name="354" href="#354">354</a>     <strong class="jxr_keyword">boolean</strong> nonUnique;
 <a class="jxr_linenumber" name="355" href="#355">355</a> 
 <a class="jxr_linenumber" name="356" href="#356">356</a> 
 <a class="jxr_linenumber" name="357" href="#357">357</a>     <em class="jxr_javadoccomment">/**</em>
@@ -371,7 +371,7 @@
 <a class="jxr_linenumber" name="361" href="#361">361</a>     @ColumnLabel(<span class="jxr_string">"INDEX_QUALIFIER"</span>)
 <a class="jxr_linenumber" name="362" href="#362">362</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
 <a class="jxr_linenumber" name="363" href="#363">363</a>     @NillableBySpecification
-<a class="jxr_linenumber" name="364" href="#364">364</a>     <strong class="jxr_keyword">private</strong> String indexQualifier;
+<a class="jxr_linenumber" name="364" href="#364">364</a>     String indexQualifier;
 <a class="jxr_linenumber" name="365" href="#365">365</a> 
 <a class="jxr_linenumber" name="366" href="#366">366</a> 
 <a class="jxr_linenumber" name="367" href="#367">367</a>     <em class="jxr_javadoccomment">/**</em>
@@ -381,7 +381,7 @@
 <a class="jxr_linenumber" name="371" href="#371">371</a>     @ColumnLabel(<span class="jxr_string">"INDEX_NAME"</span>)
 <a class="jxr_linenumber" name="372" href="#372">372</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
 <a class="jxr_linenumber" name="373" href="#373">373</a>     @NillableBySpecification
-<a class="jxr_linenumber" name="374" href="#374">374</a>     <strong class="jxr_keyword">private</strong> String indexName;
+<a class="jxr_linenumber" name="374" href="#374">374</a>     String indexName;
 <a class="jxr_linenumber" name="375" href="#375">375</a> 
 <a class="jxr_linenumber" name="376" href="#376">376</a> 
 <a class="jxr_linenumber" name="377" href="#377">377</a>     <em class="jxr_javadoccomment">/**</em>
@@ -400,7 +400,7 @@
 <a class="jxr_linenumber" name="390" href="#390">390</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="391" href="#391">391</a>     @ColumnLabel(<span class="jxr_string">"TYPE"</span>)
 <a class="jxr_linenumber" name="392" href="#392">392</a>     @XmlElement(required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="393" href="#393">393</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">short</strong> type;
+<a class="jxr_linenumber" name="393" href="#393">393</a>     <strong class="jxr_keyword">short</strong> type;
 <a class="jxr_linenumber" name="394" href="#394">394</a> 
 <a class="jxr_linenumber" name="395" href="#395">395</a> 
 <a class="jxr_linenumber" name="396" href="#396">396</a>     <em class="jxr_javadoccomment">/**</em>
@@ -409,7 +409,7 @@
 <a class="jxr_linenumber" name="399" href="#399">399</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="400" href="#400">400</a>     @ColumnLabel(<span class="jxr_string">"ORDINAL_POSITION"</span>)
 <a class="jxr_linenumber" name="401" href="#401">401</a>     @XmlElement(required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="402" href="#402">402</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">short</strong> ordinalPosition;
+<a class="jxr_linenumber" name="402" href="#402">402</a>     <strong class="jxr_keyword">short</strong> ordinalPosition;
 <a class="jxr_linenumber" name="403" href="#403">403</a> 
 <a class="jxr_linenumber" name="404" href="#404">404</a> 
 <a class="jxr_linenumber" name="405" href="#405">405</a>     <em class="jxr_javadoccomment">/**</em>
@@ -419,7 +419,7 @@
 <a class="jxr_linenumber" name="409" href="#409">409</a>     @ColumnLabel(<span class="jxr_string">"COLUMN_NAME"</span>)
 <a class="jxr_linenumber" name="410" href="#410">410</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
 <a class="jxr_linenumber" name="411" href="#411">411</a>     @NillableBySpecification
-<a class="jxr_linenumber" name="412" href="#412">412</a>     <strong class="jxr_keyword">private</strong> String columnName;
+<a class="jxr_linenumber" name="412" href="#412">412</a>     String columnName;
 <a class="jxr_linenumber" name="413" href="#413">413</a> 
 <a class="jxr_linenumber" name="414" href="#414">414</a> 
 <a class="jxr_linenumber" name="415" href="#415">415</a>     <em class="jxr_javadoccomment">/**</em>
@@ -430,7 +430,7 @@
 <a class="jxr_linenumber" name="420" href="#420">420</a>     @ColumnLabel(<span class="jxr_string">"ASC_OR_DESC"</span>)
 <a class="jxr_linenumber" name="421" href="#421">421</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
 <a class="jxr_linenumber" name="422" href="#422">422</a>     @NillableBySpecification
-<a class="jxr_linenumber" name="423" href="#423">423</a>     <strong class="jxr_keyword">private</strong> String ascOrDesc;
+<a class="jxr_linenumber" name="423" href="#423">423</a>     String ascOrDesc;
 <a class="jxr_linenumber" name="424" href="#424">424</a> 
 <a class="jxr_linenumber" name="425" href="#425">425</a> 
 <a class="jxr_linenumber" name="426" href="#426">426</a>     <em class="jxr_javadoccomment">/**</em>
@@ -440,8 +440,8 @@
 <a class="jxr_linenumber" name="430" href="#430">430</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="431" href="#431">431</a>     @ColumnLabel(<span class="jxr_string">"CARDINALITY"</span>)
 <a class="jxr_linenumber" name="432" href="#432">432</a>     @XmlElement(required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="433" href="#433">433</a>     <em class="jxr_comment">//private long cardinality;</em>
-<a class="jxr_linenumber" name="434" href="#434">434</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">int</strong> cardinality;
+<a class="jxr_linenumber" name="433" href="#433">433</a>     <em class="jxr_comment">//long cardinality;</em>
+<a class="jxr_linenumber" name="434" href="#434">434</a>     <strong class="jxr_keyword">int</strong> cardinality;
 <a class="jxr_linenumber" name="435" href="#435">435</a> 
 <a class="jxr_linenumber" name="436" href="#436">436</a> 
 <a class="jxr_linenumber" name="437" href="#437">437</a>     <em class="jxr_javadoccomment">/**</em>
@@ -451,8 +451,8 @@
 <a class="jxr_linenumber" name="441" href="#441">441</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="442" href="#442">442</a>     @ColumnLabel(<span class="jxr_string">"PAGES"</span>)
 <a class="jxr_linenumber" name="443" href="#443">443</a>     @XmlElement(required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="444" href="#444">444</a>     <em class="jxr_comment">//private long pages;</em>
-<a class="jxr_linenumber" name="445" href="#445">445</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">int</strong> pages;
+<a class="jxr_linenumber" name="444" href="#444">444</a>     <em class="jxr_comment">//long pages;</em>
+<a class="jxr_linenumber" name="445" href="#445">445</a>     <strong class="jxr_keyword">int</strong> pages;
 <a class="jxr_linenumber" name="446" href="#446">446</a> 
 <a class="jxr_linenumber" name="447" href="#447">447</a> 
 <a class="jxr_linenumber" name="448" href="#448">448</a>     <em class="jxr_javadoccomment">/**</em>
@@ -461,7 +461,7 @@
 <a class="jxr_linenumber" name="451" href="#451">451</a>     @ColumnLabel(<span class="jxr_string">"FILTER_CONDITION"</span>)
 <a class="jxr_linenumber" name="452" href="#452">452</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
 <a class="jxr_linenumber" name="453" href="#453">453</a>     @NillableBySpecification
-<a class="jxr_linenumber" name="454" href="#454">454</a>     <strong class="jxr_keyword">private</strong> String filterCondition;
+<a class="jxr_linenumber" name="454" href="#454">454</a>     String filterCondition;
 <a class="jxr_linenumber" name="455" href="#455">455</a> 
 <a class="jxr_linenumber" name="456" href="#456">456</a> 
 <a class="jxr_linenumber" name="457" href="#457">457</a> }

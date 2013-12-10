@@ -140,7 +140,7 @@
 <a class="jxr_linenumber" name="130" href="#130">130</a>         }
 <a class="jxr_linenumber" name="131" href="#131">131</a> 
 <a class="jxr_linenumber" name="132" href="#132">132</a>         <strong class="jxr_keyword">if</strong> (catalog == <strong class="jxr_keyword">null</strong>) {
-<a class="jxr_linenumber" name="133" href="#133">133</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> NullPointerException(<span class="jxr_string">"catalog"</span>);
+<a class="jxr_linenumber" name="133" href="#133">133</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> NullPointerException(<span class="jxr_string">"null catalog"</span>);
 <a class="jxr_linenumber" name="134" href="#134">134</a>         }
 <a class="jxr_linenumber" name="135" href="#135">135</a> 
 <a class="jxr_linenumber" name="136" href="#136">136</a>         retrieve(database, suppression,
@@ -148,20 +148,20 @@
 <a class="jxr_linenumber" name="138" href="#138">138</a>                  catalog.getSchemas());
 <a class="jxr_linenumber" name="139" href="#139">139</a> 
 <a class="jxr_linenumber" name="140" href="#140">140</a>         <strong class="jxr_keyword">if</strong> (catalog.getSchemas().isEmpty()) {
-<a class="jxr_linenumber" name="141" href="#141">141</a>             <strong class="jxr_keyword">final</strong> <a href="../../../../../com/github/jinahya/sql/databasemetadata/Schema.html">Schema</a> instance = <strong class="jxr_keyword">new</strong> <a href="../../../../../com/github/jinahya/sql/databasemetadata/Schema.html">Schema</a>();
-<a class="jxr_linenumber" name="142" href="#142">142</a>             instance.setTableSchem(<span class="jxr_string">""</span>);
-<a class="jxr_linenumber" name="143" href="#143">143</a>             catalog.getSchemas().add(instance);
+<a class="jxr_linenumber" name="141" href="#141">141</a>             <strong class="jxr_keyword">final</strong> <a href="../../../../../com/github/jinahya/sql/databasemetadata/Schema.html">Schema</a> schema = <strong class="jxr_keyword">new</strong> <a href="../../../../../com/github/jinahya/sql/databasemetadata/Schema.html">Schema</a>();
+<a class="jxr_linenumber" name="142" href="#142">142</a>             schema.setTableSchem(<span class="jxr_string">""</span>);
+<a class="jxr_linenumber" name="143" href="#143">143</a>             catalog.getSchemas().add(schema);
 <a class="jxr_linenumber" name="144" href="#144">144</a>         }
 <a class="jxr_linenumber" name="145" href="#145">145</a> 
-<a class="jxr_linenumber" name="146" href="#146">146</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">final</strong> Schema child : catalog.getSchemas()) {
-<a class="jxr_linenumber" name="147" href="#147">147</a>             child.setCatalog(catalog);
+<a class="jxr_linenumber" name="146" href="#146">146</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">final</strong> Schema schema : catalog.getSchemas()) {
+<a class="jxr_linenumber" name="147" href="#147">147</a>             schema.setCatalog(catalog);
 <a class="jxr_linenumber" name="148" href="#148">148</a>         }
 <a class="jxr_linenumber" name="149" href="#149">149</a> 
-<a class="jxr_linenumber" name="150" href="#150">150</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">final</strong> Schema instance : catalog.getSchemas()) {
-<a class="jxr_linenumber" name="151" href="#151">151</a>             Function.retrieve(database, suppression, instance);
-<a class="jxr_linenumber" name="152" href="#152">152</a>             Procedure.retrieve(database, suppression, instance);
-<a class="jxr_linenumber" name="153" href="#153">153</a>             Table.retrieve(database, suppression, instance);
-<a class="jxr_linenumber" name="154" href="#154">154</a>             UserDefinedType.retrieve(database, suppression, instance);
+<a class="jxr_linenumber" name="150" href="#150">150</a>         <strong class="jxr_keyword">for</strong> (<strong class="jxr_keyword">final</strong> Schema schema : catalog.getSchemas()) {
+<a class="jxr_linenumber" name="151" href="#151">151</a>             Function.retrieve(database, suppression, schema);
+<a class="jxr_linenumber" name="152" href="#152">152</a>             Procedure.retrieve(database, suppression, schema);
+<a class="jxr_linenumber" name="153" href="#153">153</a>             Table.retrieve(database, suppression, schema);
+<a class="jxr_linenumber" name="154" href="#154">154</a>             UserDefinedType.retrieve(database, suppression, schema);
 <a class="jxr_linenumber" name="155" href="#155">155</a>         }
 <a class="jxr_linenumber" name="156" href="#156">156</a>     }
 <a class="jxr_linenumber" name="157" href="#157">157</a> 
@@ -328,33 +328,44 @@
 <a class="jxr_linenumber" name="318" href="#318">318</a> 
 <a class="jxr_linenumber" name="319" href="#319">319</a> 
 <a class="jxr_linenumber" name="320" href="#320">320</a>     @ColumnLabel(<span class="jxr_string">"TABLE_SCHEM"</span>)
-<a class="jxr_linenumber" name="321" href="#321">321</a>     <em class="jxr_comment">//@SuppressionPath("schema/tableSchem")</em>
-<a class="jxr_linenumber" name="322" href="#322">322</a>     @XmlElement(required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="323" href="#323">323</a>     <strong class="jxr_keyword">private</strong> String tableSchem;
+<a class="jxr_linenumber" name="321" href="#321">321</a>     @XmlElement(required = <strong class="jxr_keyword">true</strong>)
+<a class="jxr_linenumber" name="322" href="#322">322</a>     String tableSchem;
+<a class="jxr_linenumber" name="323" href="#323">323</a> 
 <a class="jxr_linenumber" name="324" href="#324">324</a> 
-<a class="jxr_linenumber" name="325" href="#325">325</a> 
-<a class="jxr_linenumber" name="326" href="#326">326</a>     @SuppressionPath(SUPPRESSION_PATH_FUNCTIONS)
-<a class="jxr_linenumber" name="327" href="#327">327</a>     @XmlElement(name = <span class="jxr_string">"function"</span>)
-<a class="jxr_linenumber" name="328" href="#328">328</a>     <strong class="jxr_keyword">private</strong> List&lt;Function&gt; functions;
-<a class="jxr_linenumber" name="329" href="#329">329</a> 
-<a class="jxr_linenumber" name="330" href="#330">330</a> 
-<a class="jxr_linenumber" name="331" href="#331">331</a>     @SuppressionPath(SUPPRESSION_PATH_PROCEDURES)
-<a class="jxr_linenumber" name="332" href="#332">332</a>     @XmlElement(name = <span class="jxr_string">"procedure"</span>)
-<a class="jxr_linenumber" name="333" href="#333">333</a>     <strong class="jxr_keyword">private</strong> List&lt;Procedure&gt; procedures;
-<a class="jxr_linenumber" name="334" href="#334">334</a> 
-<a class="jxr_linenumber" name="335" href="#335">335</a> 
-<a class="jxr_linenumber" name="336" href="#336">336</a>     @SuppressionPath(SUPPRESSION_PATH_TABLES)
-<a class="jxr_linenumber" name="337" href="#337">337</a>     @XmlElement(name = <span class="jxr_string">"table"</span>)
-<a class="jxr_linenumber" name="338" href="#338">338</a>     <strong class="jxr_keyword">private</strong> List&lt;Table&gt; tables;
+<a class="jxr_linenumber" name="325" href="#325">325</a>     <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="326" href="#326">326</a> <em class="jxr_javadoccomment">     * functions.</em>
+<a class="jxr_linenumber" name="327" href="#327">327</a> <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="328" href="#328">328</a>     @SuppressionPath(SUPPRESSION_PATH_FUNCTIONS)
+<a class="jxr_linenumber" name="329" href="#329">329</a>     @XmlElement(name = <span class="jxr_string">"function"</span>)
+<a class="jxr_linenumber" name="330" href="#330">330</a>     List&lt;Function&gt; functions;
+<a class="jxr_linenumber" name="331" href="#331">331</a> 
+<a class="jxr_linenumber" name="332" href="#332">332</a> 
+<a class="jxr_linenumber" name="333" href="#333">333</a>     <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="334" href="#334">334</a> <em class="jxr_javadoccomment">     * procedures.</em>
+<a class="jxr_linenumber" name="335" href="#335">335</a> <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="336" href="#336">336</a>     @SuppressionPath(SUPPRESSION_PATH_PROCEDURES)
+<a class="jxr_linenumber" name="337" href="#337">337</a>     @XmlElement(name = <span class="jxr_string">"procedure"</span>)
+<a class="jxr_linenumber" name="338" href="#338">338</a>     List&lt;Procedure&gt; procedures;
 <a class="jxr_linenumber" name="339" href="#339">339</a> 
 <a class="jxr_linenumber" name="340" href="#340">340</a> 
-<a class="jxr_linenumber" name="341" href="#341">341</a>     @SuppressionPath(SUPPRESSION_PATH_USER_DEFINED_TYPES)
-<a class="jxr_linenumber" name="342" href="#342">342</a>     @XmlElement(name = <span class="jxr_string">"userDefinedType"</span>)
-<a class="jxr_linenumber" name="343" href="#343">343</a>     <strong class="jxr_keyword">private</strong> List&lt;UserDefinedType&gt; userDefinedTypes;
-<a class="jxr_linenumber" name="344" href="#344">344</a> 
-<a class="jxr_linenumber" name="345" href="#345">345</a> 
-<a class="jxr_linenumber" name="346" href="#346">346</a> }
+<a class="jxr_linenumber" name="341" href="#341">341</a>     <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="342" href="#342">342</a> <em class="jxr_javadoccomment">     * tables.</em>
+<a class="jxr_linenumber" name="343" href="#343">343</a> <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="344" href="#344">344</a>     @SuppressionPath(SUPPRESSION_PATH_TABLES)
+<a class="jxr_linenumber" name="345" href="#345">345</a>     @XmlElement(name = <span class="jxr_string">"table"</span>)
+<a class="jxr_linenumber" name="346" href="#346">346</a>     List&lt;Table&gt; tables;
 <a class="jxr_linenumber" name="347" href="#347">347</a> 
+<a class="jxr_linenumber" name="348" href="#348">348</a> 
+<a class="jxr_linenumber" name="349" href="#349">349</a>     <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="350" href="#350">350</a> <em class="jxr_javadoccomment">     * UDTs.</em>
+<a class="jxr_linenumber" name="351" href="#351">351</a> <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="352" href="#352">352</a>     @SuppressionPath(SUPPRESSION_PATH_USER_DEFINED_TYPES)
+<a class="jxr_linenumber" name="353" href="#353">353</a>     @XmlElement(name = <span class="jxr_string">"userDefinedType"</span>)
+<a class="jxr_linenumber" name="354" href="#354">354</a>     List&lt;UserDefinedType&gt; userDefinedTypes;
+<a class="jxr_linenumber" name="355" href="#355">355</a> 
+<a class="jxr_linenumber" name="356" href="#356">356</a> 
+<a class="jxr_linenumber" name="357" href="#357">357</a> }
+<a class="jxr_linenumber" name="358" href="#358">358</a> 
 </pre>
 <hr/><div id="footer">This page was automatically generated by <a href="http://maven.apache.org/">Maven</a></div></body>
 </html>

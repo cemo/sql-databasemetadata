@@ -69,7 +69,7 @@
 <a class="jxr_linenumber" name="59" href="#59">59</a>          }
 <a class="jxr_linenumber" name="60" href="#60">60</a>  
 <a class="jxr_linenumber" name="61" href="#61">61</a>          <strong class="jxr_keyword">if</strong> (tableTypes == <strong class="jxr_keyword">null</strong>) {
-<a class="jxr_linenumber" name="62" href="#62">62</a>              <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> NullPointerException(<span class="jxr_string">"tableTypes"</span>);
+<a class="jxr_linenumber" name="62" href="#62">62</a>              <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> NullPointerException(<span class="jxr_string">"null tableTypes"</span>);
 <a class="jxr_linenumber" name="63" href="#63">63</a>          }
 <a class="jxr_linenumber" name="64" href="#64">64</a>  
 <a class="jxr_linenumber" name="65" href="#65">65</a>          <strong class="jxr_keyword">if</strong> (suppression.isSuppressed(Metadata.SUPPRESSION_PATH_TABLE_TYPES)) {
@@ -102,7 +102,7 @@
 <a class="jxr_linenumber" name="92" href="#92">92</a>          }
 <a class="jxr_linenumber" name="93" href="#93">93</a>  
 <a class="jxr_linenumber" name="94" href="#94">94</a>          <strong class="jxr_keyword">if</strong> (metadata == <strong class="jxr_keyword">null</strong>) {
-<a class="jxr_linenumber" name="95" href="#95">95</a>              <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> NullPointerException(<span class="jxr_string">"metadata"</span>);
+<a class="jxr_linenumber" name="95" href="#95">95</a>              <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> NullPointerException(<span class="jxr_string">"null metadata"</span>);
 <a class="jxr_linenumber" name="96" href="#96">96</a>          }
 <a class="jxr_linenumber" name="97" href="#97">97</a>  
 <a class="jxr_linenumber" name="98" href="#98">98</a>          retrieve(database, suppression, metadata.getTableTypes());
@@ -146,7 +146,7 @@
 <a class="jxr_linenumber" name="136" href="#136">136</a>     @ColumnLabel(<span class="jxr_string">"TABLE_TYPE"</span>)
 <a class="jxr_linenumber" name="137" href="#137">137</a>     <em class="jxr_comment">//@SuppressionPath("tableType/tableType")</em>
 <a class="jxr_linenumber" name="138" href="#138">138</a>     @XmlElement(required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="139" href="#139">139</a>     <strong class="jxr_keyword">private</strong> String tableType;
+<a class="jxr_linenumber" name="139" href="#139">139</a>     String tableType;
 <a class="jxr_linenumber" name="140" href="#140">140</a> 
 <a class="jxr_linenumber" name="141" href="#141">141</a> 
 <a class="jxr_linenumber" name="142" href="#142">142</a> }

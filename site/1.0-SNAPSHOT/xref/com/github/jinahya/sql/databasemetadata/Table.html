@@ -154,7 +154,7 @@
 <a class="jxr_linenumber" name="144" href="#144">144</a>         }
 <a class="jxr_linenumber" name="145" href="#145">145</a> 
 <a class="jxr_linenumber" name="146" href="#146">146</a>         <strong class="jxr_keyword">if</strong> (tables == <strong class="jxr_keyword">null</strong>) {
-<a class="jxr_linenumber" name="147" href="#147">147</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> NullPointerException(<span class="jxr_string">"tables"</span>);
+<a class="jxr_linenumber" name="147" href="#147">147</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> NullPointerException(<span class="jxr_string">"null tables"</span>);
 <a class="jxr_linenumber" name="148" href="#148">148</a>         }
 <a class="jxr_linenumber" name="149" href="#149">149</a> 
 <a class="jxr_linenumber" name="150" href="#150">150</a>         <strong class="jxr_keyword">if</strong> (suppression.isSuppressed(Schema.SUPPRESSION_PATH_TABLES)) {
@@ -188,7 +188,7 @@
 <a class="jxr_linenumber" name="178" href="#178">178</a>         }
 <a class="jxr_linenumber" name="179" href="#179">179</a> 
 <a class="jxr_linenumber" name="180" href="#180">180</a>         <strong class="jxr_keyword">if</strong> (schema == <strong class="jxr_keyword">null</strong>) {
-<a class="jxr_linenumber" name="181" href="#181">181</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> NullPointerException(<span class="jxr_string">"schema"</span>);
+<a class="jxr_linenumber" name="181" href="#181">181</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> NullPointerException(<span class="jxr_string">"null schema"</span>);
 <a class="jxr_linenumber" name="182" href="#182">182</a>         }
 <a class="jxr_linenumber" name="183" href="#183">183</a> 
 <a class="jxr_linenumber" name="184" href="#184">184</a>         retrieve(database, suppression,
@@ -540,7 +540,7 @@
 <a class="jxr_linenumber" name="530" href="#530">530</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="531" href="#531">531</a>     @ColumnLabel(<span class="jxr_string">"TABLE_NAME"</span>)
 <a class="jxr_linenumber" name="532" href="#532">532</a>     @XmlElement(required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="533" href="#533">533</a>     <strong class="jxr_keyword">private</strong> String tableName;
+<a class="jxr_linenumber" name="533" href="#533">533</a>     String tableName;
 <a class="jxr_linenumber" name="534" href="#534">534</a> 
 <a class="jxr_linenumber" name="535" href="#535">535</a> 
 <a class="jxr_linenumber" name="536" href="#536">536</a>     <em class="jxr_javadoccomment">/**</em>
@@ -549,7 +549,7 @@
 <a class="jxr_linenumber" name="539" href="#539">539</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="540" href="#540">540</a>     @ColumnLabel(<span class="jxr_string">"TABLE_TYPE"</span>)
 <a class="jxr_linenumber" name="541" href="#541">541</a>     @XmlElement(required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="542" href="#542">542</a>     <strong class="jxr_keyword">private</strong> String tableType;
+<a class="jxr_linenumber" name="542" href="#542">542</a>     String tableType;
 <a class="jxr_linenumber" name="543" href="#543">543</a> 
 <a class="jxr_linenumber" name="544" href="#544">544</a> 
 <a class="jxr_linenumber" name="545" href="#545">545</a>     <em class="jxr_javadoccomment">/**</em>
@@ -557,7 +557,7 @@
 <a class="jxr_linenumber" name="547" href="#547">547</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="548" href="#548">548</a>     @ColumnLabel(<span class="jxr_string">"REMARKS"</span>)
 <a class="jxr_linenumber" name="549" href="#549">549</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
-<a class="jxr_linenumber" name="550" href="#550">550</a>     <strong class="jxr_keyword">private</strong> String remarks;
+<a class="jxr_linenumber" name="550" href="#550">550</a>     String remarks;
 <a class="jxr_linenumber" name="551" href="#551">551</a> 
 <a class="jxr_linenumber" name="552" href="#552">552</a> 
 <a class="jxr_linenumber" name="553" href="#553">553</a>     <em class="jxr_javadoccomment">/**</em>
@@ -567,7 +567,7 @@
 <a class="jxr_linenumber" name="557" href="#557">557</a>     @SuppressionPath(<span class="jxr_string">"table/typeCat"</span>)
 <a class="jxr_linenumber" name="558" href="#558">558</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
 <a class="jxr_linenumber" name="559" href="#559">559</a>     @NillableBySpecification
-<a class="jxr_linenumber" name="560" href="#560">560</a>     <strong class="jxr_keyword">private</strong> String typeCat;
+<a class="jxr_linenumber" name="560" href="#560">560</a>     String typeCat;
 <a class="jxr_linenumber" name="561" href="#561">561</a> 
 <a class="jxr_linenumber" name="562" href="#562">562</a> 
 <a class="jxr_linenumber" name="563" href="#563">563</a>     <em class="jxr_javadoccomment">/**</em>
@@ -577,7 +577,7 @@
 <a class="jxr_linenumber" name="567" href="#567">567</a>     @SuppressionPath(<span class="jxr_string">"table/typeSchem"</span>)
 <a class="jxr_linenumber" name="568" href="#568">568</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
 <a class="jxr_linenumber" name="569" href="#569">569</a>     @NillableBySpecification
-<a class="jxr_linenumber" name="570" href="#570">570</a>     <strong class="jxr_keyword">private</strong> String typeSchem;
+<a class="jxr_linenumber" name="570" href="#570">570</a>     String typeSchem;
 <a class="jxr_linenumber" name="571" href="#571">571</a> 
 <a class="jxr_linenumber" name="572" href="#572">572</a> 
 <a class="jxr_linenumber" name="573" href="#573">573</a>     <em class="jxr_javadoccomment">/**</em>
@@ -587,7 +587,7 @@
 <a class="jxr_linenumber" name="577" href="#577">577</a>     @SuppressionPath(<span class="jxr_string">"table/typeName"</span>)
 <a class="jxr_linenumber" name="578" href="#578">578</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
 <a class="jxr_linenumber" name="579" href="#579">579</a>     @NillableBySpecification
-<a class="jxr_linenumber" name="580" href="#580">580</a>     <strong class="jxr_keyword">private</strong> String typeName;
+<a class="jxr_linenumber" name="580" href="#580">580</a>     String typeName;
 <a class="jxr_linenumber" name="581" href="#581">581</a> 
 <a class="jxr_linenumber" name="582" href="#582">582</a> 
 <a class="jxr_linenumber" name="583" href="#583">583</a>     <em class="jxr_javadoccomment">/**</em>
@@ -597,7 +597,7 @@
 <a class="jxr_linenumber" name="587" href="#587">587</a>     @ColumnLabel(<span class="jxr_string">"SELF_REFERENCING_COL_NAME"</span>)
 <a class="jxr_linenumber" name="588" href="#588">588</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
 <a class="jxr_linenumber" name="589" href="#589">589</a>     @NillableBySpecification
-<a class="jxr_linenumber" name="590" href="#590">590</a>     <strong class="jxr_keyword">private</strong> String selfReferencingColName;
+<a class="jxr_linenumber" name="590" href="#590">590</a>     String selfReferencingColName;
 <a class="jxr_linenumber" name="591" href="#591">591</a> 
 <a class="jxr_linenumber" name="592" href="#592">592</a> 
 <a class="jxr_linenumber" name="593" href="#593">593</a>     <em class="jxr_javadoccomment">/**</em>
@@ -608,7 +608,7 @@
 <a class="jxr_linenumber" name="598" href="#598">598</a>     @ColumnLabel(<span class="jxr_string">"REF_GENERATION"</span>)
 <a class="jxr_linenumber" name="599" href="#599">599</a>     @XmlElement(nillable = <strong class="jxr_keyword">true</strong>, required = <strong class="jxr_keyword">true</strong>)
 <a class="jxr_linenumber" name="600" href="#600">600</a>     @NillableBySpecification
-<a class="jxr_linenumber" name="601" href="#601">601</a>     <strong class="jxr_keyword">private</strong> String refGeneration;
+<a class="jxr_linenumber" name="601" href="#601">601</a>     String refGeneration;
 <a class="jxr_linenumber" name="602" href="#602">602</a> 
 <a class="jxr_linenumber" name="603" href="#603">603</a> 
 <a class="jxr_linenumber" name="604" href="#604">604</a>     <em class="jxr_javadoccomment">/**</em>
@@ -616,7 +616,7 @@
 <a class="jxr_linenumber" name="606" href="#606">606</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="607" href="#607">607</a>     @SuppressWarnings(SUPPRESSION_PATH_BEST_ROW_IDENTIFIERS)
 <a class="jxr_linenumber" name="608" href="#608">608</a>     @XmlElement(name = <span class="jxr_string">"bestRowIdentifier"</span>)
-<a class="jxr_linenumber" name="609" href="#609">609</a>     <strong class="jxr_keyword">private</strong> List&lt;BestRowIdentifier&gt; bestRowIdentifiers;
+<a class="jxr_linenumber" name="609" href="#609">609</a>     List&lt;BestRowIdentifier&gt; bestRowIdentifiers;
 <a class="jxr_linenumber" name="610" href="#610">610</a> 
 <a class="jxr_linenumber" name="611" href="#611">611</a> 
 <a class="jxr_linenumber" name="612" href="#612">612</a>     <em class="jxr_javadoccomment">/**</em>
@@ -624,7 +624,7 @@
 <a class="jxr_linenumber" name="614" href="#614">614</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="615" href="#615">615</a>     @SuppressWarnings(SUPPRESSION_PATH_COLUMNS)
 <a class="jxr_linenumber" name="616" href="#616">616</a>     @XmlElement(name = <span class="jxr_string">"column"</span>)
-<a class="jxr_linenumber" name="617" href="#617">617</a>     <strong class="jxr_keyword">private</strong> List&lt;Column&gt; columns;
+<a class="jxr_linenumber" name="617" href="#617">617</a>     List&lt;Column&gt; columns;
 <a class="jxr_linenumber" name="618" href="#618">618</a> 
 <a class="jxr_linenumber" name="619" href="#619">619</a> 
 <a class="jxr_linenumber" name="620" href="#620">620</a>     <em class="jxr_javadoccomment">/**</em>
@@ -632,7 +632,7 @@
 <a class="jxr_linenumber" name="622" href="#622">622</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="623" href="#623">623</a>     @SuppressionPath(SUPPRESSION_PATH_COLUMN_PRIVILEGES)
 <a class="jxr_linenumber" name="624" href="#624">624</a>     @XmlElement(name = <span class="jxr_string">"columnPrivilege"</span>)
-<a class="jxr_linenumber" name="625" href="#625">625</a>     <strong class="jxr_keyword">private</strong> List&lt;ColumnPrivilege&gt; columnPrivileges;
+<a class="jxr_linenumber" name="625" href="#625">625</a>     List&lt;ColumnPrivilege&gt; columnPrivileges;
 <a class="jxr_linenumber" name="626" href="#626">626</a> 
 <a class="jxr_linenumber" name="627" href="#627">627</a> 
 <a class="jxr_linenumber" name="628" href="#628">628</a>     <em class="jxr_javadoccomment">/**</em>
@@ -640,7 +640,7 @@
 <a class="jxr_linenumber" name="630" href="#630">630</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="631" href="#631">631</a>     @SuppressionPath(SUPPRESSION_PATH_EXPORTED_KEYS)
 <a class="jxr_linenumber" name="632" href="#632">632</a>     @XmlElement(name = <span class="jxr_string">"exportedKey"</span>)
-<a class="jxr_linenumber" name="633" href="#633">633</a>     <strong class="jxr_keyword">private</strong> List&lt;ExportedKey&gt; exportedKeys;
+<a class="jxr_linenumber" name="633" href="#633">633</a>     List&lt;ExportedKey&gt; exportedKeys;
 <a class="jxr_linenumber" name="634" href="#634">634</a> 
 <a class="jxr_linenumber" name="635" href="#635">635</a> 
 <a class="jxr_linenumber" name="636" href="#636">636</a>     <em class="jxr_javadoccomment">/**</em>
@@ -648,7 +648,7 @@
 <a class="jxr_linenumber" name="638" href="#638">638</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="639" href="#639">639</a>     @SuppressionPath(SUPPRESSION_PATH_IMPORTED_KEYS)
 <a class="jxr_linenumber" name="640" href="#640">640</a>     @XmlElement(name = <span class="jxr_string">"importedKey"</span>)
-<a class="jxr_linenumber" name="641" href="#641">641</a>     <strong class="jxr_keyword">private</strong> List&lt;ImportedKey&gt; importedKeys;
+<a class="jxr_linenumber" name="641" href="#641">641</a>     List&lt;ImportedKey&gt; importedKeys;
 <a class="jxr_linenumber" name="642" href="#642">642</a> 
 <a class="jxr_linenumber" name="643" href="#643">643</a> 
 <a class="jxr_linenumber" name="644" href="#644">644</a>     <em class="jxr_javadoccomment">/**</em>
@@ -656,7 +656,7 @@
 <a class="jxr_linenumber" name="646" href="#646">646</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="647" href="#647">647</a>     @SuppressionPath(SUPPRESSION_PATH_INDEX_INFO)
 <a class="jxr_linenumber" name="648" href="#648">648</a>     @XmlElement(name = <span class="jxr_string">"indexInfo"</span>)
-<a class="jxr_linenumber" name="649" href="#649">649</a>     <strong class="jxr_keyword">private</strong> List&lt;IndexInfo&gt; indexInfo;
+<a class="jxr_linenumber" name="649" href="#649">649</a>     List&lt;IndexInfo&gt; indexInfo;
 <a class="jxr_linenumber" name="650" href="#650">650</a> 
 <a class="jxr_linenumber" name="651" href="#651">651</a> 
 <a class="jxr_linenumber" name="652" href="#652">652</a>     <em class="jxr_javadoccomment">/**</em>
@@ -664,7 +664,7 @@
 <a class="jxr_linenumber" name="654" href="#654">654</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="655" href="#655">655</a>     @SuppressWarnings(SUPPRESSION_PATH_PRIMARY_KEYS)
 <a class="jxr_linenumber" name="656" href="#656">656</a>     @XmlElement(name = <span class="jxr_string">"primaryKey"</span>)
-<a class="jxr_linenumber" name="657" href="#657">657</a>     <strong class="jxr_keyword">private</strong> List&lt;PrimaryKey&gt; primaryKeys;
+<a class="jxr_linenumber" name="657" href="#657">657</a>     List&lt;PrimaryKey&gt; primaryKeys;
 <a class="jxr_linenumber" name="658" href="#658">658</a> 
 <a class="jxr_linenumber" name="659" href="#659">659</a> 
 <a class="jxr_linenumber" name="660" href="#660">660</a>     <em class="jxr_javadoccomment">/**</em>
@@ -672,7 +672,7 @@
 <a class="jxr_linenumber" name="662" href="#662">662</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="663" href="#663">663</a>     @SuppressionPath(SUPPRESSION_PATH_TABLE_PRIVILEGES)
 <a class="jxr_linenumber" name="664" href="#664">664</a>     @XmlElement(name = <span class="jxr_string">"tablePrivilege"</span>)
-<a class="jxr_linenumber" name="665" href="#665">665</a>     <strong class="jxr_keyword">private</strong> List&lt;TablePrivilege&gt; tablePrivileges;
+<a class="jxr_linenumber" name="665" href="#665">665</a>     List&lt;TablePrivilege&gt; tablePrivileges;
 <a class="jxr_linenumber" name="666" href="#666">666</a> 
 <a class="jxr_linenumber" name="667" href="#667">667</a> 
 <a class="jxr_linenumber" name="668" href="#668">668</a>     <em class="jxr_javadoccomment">/**</em>
@@ -680,7 +680,7 @@
 <a class="jxr_linenumber" name="670" href="#670">670</a> <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="671" href="#671">671</a>     @SuppressionPath(SUPPRESSION_PATH_VERSION_COLUMNS)
 <a class="jxr_linenumber" name="672" href="#672">672</a>     @XmlElement(name = <span class="jxr_string">"versionColumn"</span>)
-<a class="jxr_linenumber" name="673" href="#673">673</a>     <strong class="jxr_keyword">private</strong> List&lt;VersionColumn&gt; versionColumns;
+<a class="jxr_linenumber" name="673" href="#673">673</a>     List&lt;VersionColumn&gt; versionColumns;
 <a class="jxr_linenumber" name="674" href="#674">674</a> 
 <a class="jxr_linenumber" name="675" href="#675">675</a> 
 <a class="jxr_linenumber" name="676" href="#676">676</a> }
